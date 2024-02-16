@@ -12,6 +12,7 @@ class StausSection extends StatelessWidget {
       leading: const AvatarWidget(
         image: AppImages.girl,
         displayIndicator: false,
+        displayBorder: false,
       ),
       title: TextField(
         decoration: InputDecoration(

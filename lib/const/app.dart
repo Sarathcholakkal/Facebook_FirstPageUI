@@ -5,7 +5,8 @@ class AppColors {
   static const Color text = Color(0xFF343AD1);
   static const Color stroke = Color(0xFF5A5EAD);
   static const Color liteGrey = Color(0xFFECE7E7);
-  static Color? divider = Colors.grey[500];
+  static Color? divider = Colors.grey[300];
+  static Color? smallText = Colors.grey[700];
 }
 
 class AppImages {
@@ -16,4 +17,21 @@ class AppImages {
   static const String post2 = "assets/singam.jpg";
   static const String post3 = "assets/iron.jpg";
   static const String girl = "assets/girl.jpg";
+}
+
+class AppDivider {
+  static Widget vertical = const VerticalDivider(
+    thickness: 1,
+    color: Colors.black,
+  );
+
+  static Widget horizonadalthin = Divider(
+    color: AppColors.divider,
+    thickness: 1,
+  );
+
+  static Widget horizondalthick = Divider(
+    color: AppColors.divider,
+    thickness: 5.0,
+  );
 }

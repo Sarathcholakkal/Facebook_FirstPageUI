@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../widgets/sqarebutton.dart';
 
-class HeaderSection extends StatelessWidget {
-  const HeaderSection({super.key});
+class Footer extends StatelessWidget {
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,21 +15,21 @@ class HeaderSection extends StatelessWidget {
           children: <Widget>[
             SqureButton(
                 onpress: () {},
-                icon: Icons.video_call,
-                color: Colors.red,
+                icon: Icons.thumb_up_outlined,
+                color: AppColors.smallText!,
                 label: "Live"),
             AppDivider.vertical,
             SqureButton(
                 onpress: () {},
-                icon: Icons.collections_bookmark,
-                color: Colors.green,
+                icon: Icons.chat_outlined,
+                color: AppColors.smallText!,
                 label: "Photos"),
             AppDivider.vertical,
             SqureButton(
                 onpress: () {},
-                icon: Icons.voice_chat_outlined,
-                color: Colors.blue,
-                label: "chats")
+                icon: Icons.share,
+                color: AppColors.smallText!,
+                label: "Share")
           ],
         ),
       ),

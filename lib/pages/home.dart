@@ -1,7 +1,9 @@
 import 'package:facebook_ui/const/app.dart';
+import 'package:facebook_ui/pages/sections/footer.dart';
 import 'package:facebook_ui/pages/sections/header.dart';
 import 'package:facebook_ui/pages/sections/room.dart';
 import 'package:facebook_ui/pages/sections/story.dart';
+import 'package:facebook_ui/pages/sections/postCard.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -15,14 +17,6 @@ class ScreenHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var thinDivider = Divider(
-      color: AppColors.divider,
-      thickness: 1,
-    );
-    var thickDivider = Divider(
-      color: AppColors.divider,
-      thickness: 3.0,
-    );
     return Scaffold(
       appBar: AppBar(
         title: const StrokeText(
@@ -74,15 +68,29 @@ class ScreenHome extends StatelessWidget {
       ),
       body: SafeArea(
           child: Container(
+        padding: const EdgeInsets.all(.5),
         child: ListView(
           children: [
             const StausSection(),
-            thinDivider,
+            AppDivider.horizonadalthin,
             const HeaderSection(),
-            thickDivider,
+            AppDivider.horizonadalthin,
             const RoomSection(),
-            thickDivider,
+            AppDivider.horizondalthick,
             const StorySection(),
+            AppDivider.horizondalthick,
+            const PostCard(
+              profileName: "Anoop Mohan",
+              profileimage: AppImages.common,
+              PublishAt: "5h",
+              postTitle: "hello every one",
+              postImage: AppImages.post,
+              blueTick: true,
+              likeCount: "10k",
+              commentCount: "500",
+              shareCount: "3k",
+            ),
+            AppDivider.horizondalthick
           ],
         ),
       )),
