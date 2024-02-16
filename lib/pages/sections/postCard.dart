@@ -115,16 +115,19 @@ class PostCard extends StatelessWidget {
     );
   }
 
-  Container createTitle() {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 5),
-      child: Center(
-        child: Text(
-          postTitle,
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
+  Widget createTitle() {
+    return postTitle != null && postTitle != ""
+        ? Container(
+            margin: const EdgeInsets.only(bottom: 5),
+            child: Center(
+              child: Text(
+                postTitle,
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              ),
+            ),
+          )
+        : SizedBox();
   }
 
   ListTile createHeader() {

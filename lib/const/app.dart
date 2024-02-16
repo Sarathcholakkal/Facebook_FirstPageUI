@@ -17,6 +17,9 @@ class AppImages {
   static const String post2 = "assets/singam.jpg";
   static const String post3 = "assets/iron.jpg";
   static const String girl = "assets/girl.jpg";
+  static const String actress = "assets/actress.jpg";
+  static const String keerthi = "assets/keerthi.jpg";
+  static const String thammana = "assets/thammana.jpg";
 }
 
 class AppDivider {

@@ -4,6 +4,7 @@ import 'package:facebook_ui/pages/sections/header.dart';
 import 'package:facebook_ui/pages/sections/room.dart';
 import 'package:facebook_ui/pages/sections/story.dart';
 import 'package:facebook_ui/pages/sections/postCard.dart';
+import 'package:facebook_ui/pages/sections/suggetion.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -90,7 +91,32 @@ class ScreenHome extends StatelessWidget {
               commentCount: "500",
               shareCount: "3k",
             ),
-            AppDivider.horizondalthick
+            AppDivider.horizondalthick,
+            const PostCard(
+              profileName: "vidyth",
+              profileimage: AppImages.post3,
+              PublishAt: "1 sec ago",
+              postTitle: "",
+              postImage: AppImages.girl,
+              likeCount: "22k",
+              commentCount: "300",
+              shareCount: "1k",
+            ),
+            AppDivider.horizondalthick,
+            const SuggetionSection(),
+            AppDivider.horizondalthick,
+            const PostCard(
+              profileName: "sudheesh",
+              profileimage: AppImages.user,
+              PublishAt: "1 sec ago",
+              postTitle:
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              postImage: AppImages.post2,
+              likeCount: "22k",
+              commentCount: "300",
+              shareCount: "1k",
+            ),
+            AppDivider.horizondalthick,
           ],
         ),
       )),
